@@ -1,0 +1,22 @@
+section.form
+  .container
+    h3 Заказать звонок
+    p Вы готовы забронировать участок? У вас остались вопросы? <br>Оставьте ваши контактные данные и мы вам обязательно вам перезвоним.
+    form.form-wrap
+      .form__top
+        .input-wrap
+          p Имя
+          input.input__text(type="text"  placeholder="Анна")
+          .error
+        .input-wrap
+          p Телефон
+          input.input__text(type="text"  placeholder="+7 (963) 288 03 02")
+          .error
+        .input-wrap
+          input.input__submit.btn(type="submit" value="Отправить")
+          .error
+      .form__bottom
+        label.checkbox
+          input(type="checkbox" checked)
+          span
+          | Я согласен на обработку персональных данных

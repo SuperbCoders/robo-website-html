@@ -1,0 +1,40 @@
+.about{
+  padding-bottom: 22vw;
+  background: url(/images/form__bg.svg) no-repeat center bottom / 100% auto;
+  margin-bottom: -60px;
+  color: #221177;
+  h2{
+    color: #221177;
+  }
+}
+
+.about__list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about__item{
+  width: 26%;
+  &--logos{
+    position: relative;
+    padding-left: 207px;
+    background: url(/images/about__logos.png) no-repeat left top / 166px auto;
+    width: calc(74% - 24px);
+  }
+}
+
+.about__panel{
+  margin-bottom: 36px;
+}
+
+.letter-text{
+  font-family: 'Alegreya Sans';
+  font-size: 19px;
+  letter-spacing: 0.2em;
+  line-height: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: rgba(34, 17, 119, .6);
+}
