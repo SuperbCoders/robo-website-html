@@ -22,14 +22,14 @@
 }
 
 .slider__wrap{
-  margin-left: calc((100% - 980px) / 2);
-  width: 78%;
+  width: 115%;
   .slick-list{
     overflow: inherit;
   }
   .slick-slide{
     opacity: .2;
     transition: .4s;
+
     &.slick-active{
       opacity: 1;
     }
@@ -55,5 +55,19 @@
     &.slick-active{
       background-color: #fff;
     }
+  }
+}
+
+.slide{
+  position: relative;
+  border-radius: 12px 12px 0 0 ;
+  overflow: hidden;
+  &:after{
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 28px;
+    background: url(/images/bar.svg) no-repeat 10px center / 32px 8px;
+    background-color: #393939;
   }
 }
