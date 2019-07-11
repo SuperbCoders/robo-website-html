@@ -160,6 +160,65 @@
   .footer__links a:hover {
     opacity: 1; }
 
+.sliders {
+  background-color: #222222;
+  padding: 240px 0 240px;
+  margin-bottom: 200px; }
+
+.slider {
+  margin-bottom: 240px; }
+  .slider h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 56px; }
+    .slider h2 span {
+      font-family: "Apercu Pro";
+      color: rgba(255, 255, 255, 0.2); }
+  .slider:last-child {
+    margin-bottom: 0px; }
+
+.slider__wrap {
+  margin-left: -webkit-calc((100% - 980px) / 2);
+  margin-left: calc((100% - 980px) / 2);
+  width: 78%; }
+  .slider__wrap .slick-list {
+    overflow: inherit; }
+  .slider__wrap .slick-slide {
+    opacity: .2;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+    .slider__wrap .slick-slide.slick-active {
+      opacity: 1; }
+
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(-6vw);
+      -ms-transform: translateX(-6vw);
+          transform: translateX(-6vw);
+  padding-top: 20px;
+  text-align: center; }
+  .slick-dots button {
+    display: none; }
+  .slick-dots li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px; }
+    .slick-dots li.slick-active {
+      background-color: #fff; }
+
 .header {
   display: -webkit-box;
   display: -webkit-flex;
