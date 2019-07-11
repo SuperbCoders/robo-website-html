@@ -1,0 +1,27 @@
+.faq{
+  padding-bottom: 100px;
+}
+
+.faq__panel{
+  position: relative;
+  &:after{
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    content: "";
+    background-color: #222;
+    opacity: .05;;
+  }
+}
+
+.faq__title{
+  margin-bottom: 22px;
+  padding-top: 22px;
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.faq__text{
+ display: none
+}

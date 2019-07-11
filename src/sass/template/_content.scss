@@ -1,0 +1,521 @@
+.about {
+  padding-top: 180px;
+  padding-bottom: 130px; }
+  .about h2 {
+    margin-bottom: 100px; }
+
+.about__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.about__item {
+  margin-bottom: 50px;
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px); }
+
+.about__title {
+  font-size: 18px;
+  color: #162EF4;
+  line-height: 46px;
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .about__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #fff;
+    z-index: -1; }
+
+.callback {
+  padding-top: 170px;
+  padding-bottom: 240px;
+  background-color: #162EF4; }
+  .callback h2 {
+    opacity: .7;
+    margin-bottom: 48px;
+    color: #fff; }
+  .callback .callback_link {
+    font-size: 24px;
+    line-height: 44px;
+    -webkit-transform: translateX(52px);
+        -ms-transform: translateX(52px);
+            transform: translateX(52px);
+    position: relative;
+    font-family: 'Apercu Pro';
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; }
+    .callback .callback_link:hover:before {
+      -webkit-transform: translateX(-14px);
+          -ms-transform: translateX(-14px);
+              transform: translateX(-14px); }
+    .callback .callback_link:before {
+      content: "";
+      background: url(/images/arrow_right.svg) no-repeat left top;
+      right: 100%;
+      position: absolute;
+      top: 15px;
+      width: 42px;
+      height: 14px;
+      -webkit-transform: translateX(-20px);
+          -ms-transform: translateX(-20px);
+              transform: translateX(-20px);
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+    .callback .callback_link:after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-4px);
+          -ms-transform: translateX(-50%) translateY(-4px);
+              transform: translateX(-50%) translateY(-4px);
+      background-color: #fff;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    .callback .callback_link:visited {
+      color: #fff; }
+    .callback .callback_link:hover:after {
+      width: 0; }
+
+.faq {
+  padding-bottom: 100px; }
+
+.faq__panel {
+  position: relative; }
+  .faq__panel:after {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    content: "";
+    background-color: #222;
+    opacity: .05; }
+
+.faq__title {
+  margin-bottom: 22px;
+  padding-top: 22px;
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: bold; }
+
+.faq__text {
+  display: none; }
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: -80px; }
+
+.footer__warp {
+  font-size: 18px;
+  height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.copyright {
+  opacity: 0.7;
+  color: #fff; }
+
+.footer__links a {
+  color: #fff;
+  opacity: .7;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  text-decoration: none;
+  margin-left: 40px; }
+  .footer__links a:hover {
+    opacity: 1; }
+
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 48px;
+  position: absolute;
+  width: 100%;
+  z-index: 100; }
+
+.header__logo {
+  width: 72px;
+  height: 32px;
+  font-family: 'Apercu Pro';
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .header__logo:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 100%;
+    width: 100%;
+    background-color: #162EF4;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    top: 14px; }
+  .header__logo span {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transition-delay: .3s;
+         -o-transition-delay: .3s;
+            transition-delay: .3s; }
+  .header__logo:hover span {
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s; }
+  .header__logo:hover:before {
+    right: 0;
+    width: 0; }
+  .header__logo:hover .header__logo--item:nth-child(1) .header__logo--text {
+    -webkit-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+            transform: translateY(15px);
+    color: #162EF4;
+    -webkit-transition-delay: .3s;
+         -o-transition-delay: .3s;
+            transition-delay: .3s; }
+  .header__logo:hover .header__logo--item:nth-child(3) .header__logo--text {
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
+    color: #162EF4;
+    -webkit-transition-delay: .3s;
+         -o-transition-delay: .3s;
+            transition-delay: .3s; }
+  .header__logo .header__logo--item {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    height: 100%; }
+  .header__logo .header__logo--item:nth-child(1) {
+    bottom: 100%;
+    -webkit-transform: translateY(17px);
+        -ms-transform: translateY(17px);
+            transform: translateY(17px); }
+    .header__logo .header__logo--item:nth-child(1) .header__logo--text {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
+  .header__logo .header__logo--item:nth-child(3) {
+    top: 100%;
+    -webkit-transform: translateY(-17px);
+        -ms-transform: translateY(-17px);
+            transform: translateY(-17px); }
+    .header__logo .header__logo--item:nth-child(3) .header__logo--text {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      -webkit-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+              transform: translateY(-30px); }
+
+.header__callback {
+  font-family: 'Apercu Pro';
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5;
+  color: #162EF4;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer; }
+  .header__callback:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-4px);
+        -ms-transform: translateX(-50%) translateY(-4px);
+            transform: translateX(-50%) translateY(-4px);
+    background-color: #162EF4;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .header__callback:hover:after {
+    width: 0; }
+
+.how {
+  padding-bottom: 190px; }
+
+.how__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.how__number {
+  font-size: 72px;
+  color: #fff;
+  line-height: 72px;
+  font-weight: bold;
+  margin-bottom: -60px;
+  padding-left: 67px; }
+
+.how__ico {
+  margin-bottom: 50px; }
+
+.how-s {
+  padding-bottom: 180px; }
+  .how-s h2 {
+    margin-bottom: 70px; }
+  .how-s p {
+    margin-bottom: 42px; }
+
+.how__li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .how__li li {
+    width: 33%;
+    margin-bottom: 12px;
+    font-weight: 500;
+    padding-left: 28px;
+    position: relative; }
+    .how__li li:after {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-color: #162EF4;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+
+.main {
+  height: 100vh;
+  position: relative; }
+
+.main__wrap {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%; }
+
+.main__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 48px;
+  font-weight: bold; }
+
+.main__scroll {
+  padding-right: 18px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  .main__scroll:hover {
+    color: #162EF4; }
+    .main__scroll:hover:before {
+      width: 76%; }
+  .main__scroll:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 8px;
+    height: 22px;
+    background: url(/images/arrow.svg) no-repeat center top/contain;
+    -webkit-animation: animateMainArrow 1s ease-in-out infinite;
+            animation: animateMainArrow 1s ease-in-out infinite; }
+  .main__scroll:before {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #162EF4;
+    content: "";
+    width: 0px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+
+@-webkit-keyframes animateMainArrow {
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); }
+  50% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); } }
+
+@keyframes animateMainArrow {
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); }
+  50% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); } }
+
+.price {
+  padding-bottom: 100px; }
+  .price h2 {
+    margin-bottom: 100px; }
+
+.price__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.price__item {
+  width: -webkit-calc(50% - 24px);
+  width: calc(50% - 24px);
+  padding-top: 80px;
+  padding-right: 80px;
+  padding-bottom: 70px;
+  padding-left: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
+
+.price__title {
+  font-size: 52px;
+  line-height: 68px;
+  color: #162EF4;
+  margin-bottom: 34px;
+  font-weight: bold; }
+
+.price__list {
+  margin-bottom: 36px; }
+  .price__list li a {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+    background: url(/images/check.svg) no-repeat left 52%/auto;
+    text-decoration: none;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+    .price__list li a:hover {
+      color: #162EF4; }
+
+.price__link {
+  font-family: 'Apercu Pro';
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5;
+  color: #162EF4;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; }
+  .price__link:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-4px);
+        -ms-transform: translateX(-50%) translateY(-4px);
+            transform: translateX(-50%) translateY(-4px);
+    background-color: #162EF4;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .price__link:visited {
+    color: #162EF4; }
+  .price__link:hover:after {
+    width: 0; }

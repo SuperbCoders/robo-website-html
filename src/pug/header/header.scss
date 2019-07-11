@@ -1,0 +1,115 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 48px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__logo{
+  width: 72px;
+  height: 32px;
+  font-family: 'Apercu Pro';
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 100%;
+    width: 100%;
+    background-color: #162EF4;
+    transition: .3s;
+    top: 14px;
+  }
+  span{
+    transition: .3s;
+    transition-delay: .3s;
+  }
+  &:hover{
+    span{
+      transition: 0s;
+      opacity: 0;
+      transition-delay: 0s;
+    }
+    &:before{
+      right: 0;
+      width: 0;
+    }
+    .header__logo--item:nth-child(1){
+      .header__logo--text{
+        transform: translateY(15px);
+        color: #162EF4;
+        transition-delay: .3s;
+      }
+    }
+    .header__logo--item:nth-child(3){
+      .header__logo--text{
+        transform: translateY(-15px);
+        color: #162EF4;
+        transition-delay: .3s;
+      }
+    }
+  }
+  .header__logo--item {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+  .header__logo--item:nth-child(1){
+    bottom: 100%;
+    transform: translateY(17px);
+    .header__logo--text{
+      transition: .3s;
+      transform: translateY(30px);
+    }
+  }
+  .header__logo--item:nth-child(3){
+    top: 100%;
+    transform: translateY(-17px);
+    .header__logo--text{
+      transition: .3s;
+      transform: translateY(-30px);
+    }
+  }
+}
+
+
+
+
+.header__callback{
+  font-family: 'Apercu Pro';
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5;
+  color: #162EF4;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  &:after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    background-color: #162EF4;
+    transition: .3s;
+  }
+  &:hover:after{
+    width: 0;
+  }
+}

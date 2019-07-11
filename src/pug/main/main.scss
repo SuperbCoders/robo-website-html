@@ -1,0 +1,68 @@
+.main{
+  height: 100vh;
+  position: relative;
+}
+.main__wrap{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.main__footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 48px;
+  font-weight: bold;
+}
+.main__scroll{
+  padding-right: 18px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .4s;
+  &:hover{
+    color: #162EF4;
+    &:before{
+      width: 76%;
+    }
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 8px;
+    height: 22px;
+    background: url(/images/arrow.svg) no-repeat center top / contain;
+    animation: animateMainArrow 1s ease-in-out infinite;
+  }
+  &:before{
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #162EF4;
+    content: "";
+    width: 0px;
+    transition: .4s;
+  }
+}
+
+@keyframes animateMainArrow{
+  0%{
+    transform: translateY(-1px)
+  }
+  50%{
+    transform: translateY(1px);
+  }
+  100%{
+    transform: translateY(-1px)
+  }
+}

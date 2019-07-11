@@ -1,0 +1,55 @@
+.callback{
+  padding-top: 170px;
+  padding-bottom: 240px;
+  background-color: #162EF4;
+  h2{
+    opacity: .7;
+    margin-bottom: 48px;
+    color: #fff;
+  }
+
+  .callback_link{
+    font-size: 24px;
+    line-height: 44px;
+    transform: translateX(52px);
+
+    position: relative;
+    font-family: 'Apercu Pro';
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover:before{
+      transform: translateX(-14px);
+    }
+    &:before{
+      content: "";
+      background: url(/images/arrow_right.svg) no-repeat left top;
+      right: 100%;
+      position: absolute;
+      top: 15px;
+      width: 42px;
+      height: 14px;
+      transform: translateX(-20px);
+      transition: .4s;
+    }
+    &:after{
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-4px);
+      background-color: #fff;
+      transition: .3s;
+    }
+    &:visited{
+      color: #fff;
+    }
+    &:hover:after{
+      width: 0;
+    }
+  }
+}

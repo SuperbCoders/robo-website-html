@@ -1,0 +1,40 @@
+.about{
+  padding-top: 180px;
+  padding-bottom: 130px;
+  h2{
+    margin-bottom: 100px;
+  }
+}
+
+.about__list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about__item{
+  margin-bottom: 50px;
+  width: calc(50% - 30px);
+}
+
+.about__title{
+  font-size: 18px;
+  color: #162EF4;
+  line-height: 46px;
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+  }
+}
