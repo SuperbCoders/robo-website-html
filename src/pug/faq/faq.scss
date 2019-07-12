@@ -23,5 +23,50 @@
   font-weight: bold;
 }
 .faq__text{
- display: none
+ display: none;
+ padding-bottom: 24px;
+}
+
+.faq__title{
+  cursor: pointer;
+  position: relative;
+}
+.more{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  top: 41px;
+  &:after, &:before{
+    width: 16px;
+    height: 2px;
+    background-color: #222;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-out all;
+  }  
+  &:before {
+    transform: translate(-50%, -50%) rotate(90deg);
+ }
+}
+.more3 {
+  transition: 0.2s ease-out all 0.2s;
+  .open-state & {
+    transition: all .6s cubic-bezier(.46,-.41,.3,1.52) .1s;
+     &:before {
+        transform: translate(-50%, -50%) rotate(180deg);
+        transition: all .6s cubic-bezier(.46,-.41,.3,1.52) .1s;
+     }
+     
+     &:after {
+        transform: translate(-50%, -50%) rotate(180deg);
+        transition: all .6s cubic-bezier(.46,-.41,.3,1.52) .1s;
+     }
+  }
+  
 }

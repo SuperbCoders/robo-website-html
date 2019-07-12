@@ -39,10 +39,13 @@ gulp.task('views', function buildHTML() {
 gulp.task('scripts', ['delJs'], function () {
 	return gulp.src([
 		'src/libs/jquery/dist/jquery.js',
-		'src/libs/mask/tmask.js',
-		'src/libs/mask/mask.js',
-		'src/libs/datepicker.js',
+		// 'src/libs/mask/tmask.js',
+		// 'src/libs/mask/mask.js',
+		// 'src/libs/datepicker.js',
 		'src/libs/slick.js',
+		'src/libs/anime.min.js',
+		'src/libs/charming.min.js',
+		// 'src/libs/main.js',
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

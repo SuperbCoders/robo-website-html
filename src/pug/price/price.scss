@@ -30,7 +30,7 @@
 
 .price__list{
   margin-bottom: 36px;
-  li a{
+  li{
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 12px;
@@ -39,8 +39,17 @@
     background: url(/images/check.svg) no-repeat left 52%/auto;
     text-decoration: none;
     transition: .4s;
+    span{
+      font-family: 'Apercu Pro';
+      font-weight: 500;
+      border-bottom: 1px dashed transparent;
+      display: inline-block;
+      cursor: pointer;
+    }
     &:hover{
-      color: #162EF4;
+      span{
+        border-bottom: 1px dashed #A4A4A4;
+      }
     }
   }
 }
@@ -74,3 +83,63 @@
     width: 0;
   }
 }
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip__trigger {
+	cursor: pointer;
+	position: relative;
+}
+
+.tooltip__trigger-text {
+	display: block;
+	padding: 0.85em;
+	pointer-events: none;
+}
+
+.tooltip__base {
+	position: absolute;
+  left: 100%;
+  top: 0;
+  width: 280px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+	opacity: 0;
+  pointer-events: none;
+  z-index: 200;
+}
+
+.tooltip__shape{
+  opacity: .95;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  path{
+    fill: #222; 
+    overflow: hidden;
+  }
+}
+
+.tooltip__content {
+	color: #4a4a4a;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+  padding: 18px 40px 15px 40px;
+  font-size: 18px;
+  line-break: 32px;
+  color: rgba(255,525,255,.5);
+
+}
+
+/* Indivudual styles */
+
