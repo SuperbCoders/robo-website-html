@@ -21,6 +21,11 @@
   font-size: 22px;
   line-height: 40px;
   font-weight: bold;
+  @media(max-width: 980px){
+    font-size: 18px;
+    line-height: 32px;
+    padding-right: 40px;
+  }
 }
 .faq__text{
  display: none;

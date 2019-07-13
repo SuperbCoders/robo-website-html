@@ -3,6 +3,9 @@
   padding-bottom: 130px;
   h2{
     margin-bottom: 100px;
+    @media(max-width: 768px){
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -15,6 +18,9 @@
 .about__item{
   margin-bottom: 50px;
   width: calc(50% - 30px);
+  @media(max-width: 980px){
+    width: 100%;
+  }
 }
 
 .about__title{

@@ -20,7 +20,19 @@
   padding-right: 60px;
   padding-bottom: 48px;
   font-weight: bold;
+  @media(max-width: 980px){
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
+
+.main__date{
+@media(max-width: 980px){
+  display: none;
+}
+}
+
+
 .main__scroll{
   padding-right: 18px;
   position: relative;
