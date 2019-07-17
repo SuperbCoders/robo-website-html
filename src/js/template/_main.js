@@ -7,6 +7,34 @@ $('.slider__wrap').each(function () {
   })
 });
 
+$('.slider').each(function () {
+  $('.slider__pagination').append('<span></span>');
+  $('.slider__pagination span:eq(0)').addClass('active');
+});
+
+
+$(window).on('scroll', function () {
+  var windowScroll = $(this).scrollTop();
+  var slidersScrolltop = $('.sliders').offset().top;
+  var slidersHeight = ($('.sliders').innerHeight() * 0.9) + slidersScrolltop;
+  $('.slider').each(function () {
+    var SlideScrolltop = $(this).offset().top - 20;
+    if (windowScroll > SlideScrolltop) {
+      var index = $(this).index();
+      $('.slider__pagination span:eq(' + index + ')').addClass('active').siblings().removeClass('active');
+      var sliderAnchor = index + 2;
+      $('.slider-next').attr('href', '#slider' + sliderAnchor);
+    }
+  });
+  if (windowScroll > slidersScrolltop && windowScroll < slidersHeight) {
+    $('.slider__pagination, .slider-next').addClass('active');
+  } else {
+    $('.slider__pagination, .slider-next').removeClass('active');
+  }
+});
+
+
+
 
 $('.slick-slide').hover(
   function () {
