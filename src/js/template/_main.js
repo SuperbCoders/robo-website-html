@@ -295,3 +295,16 @@ $('.faq__title').on('click', function () {
 
   const init = (() => tooltips.forEach(t => new Tooltip(t)))();
 };
+
+
+$('.header__callback').on('click', function () {
+  $('.submit').fadeIn(0).addClass('active');
+});
+
+$('.submit__close').on('click', function () {
+  $('.submit').removeClass('active');
+  setTimeout(function () {
+    $('.submit').fadeOut(0);
+  }, 2200)
+
+});
