@@ -4,10 +4,13 @@
   top: 0;
   width: 100%;
   height: 100%;
-  padding-top: 160px;
   z-index: 999;
   display: none;
-  overflow-y: auto;
+  .submit-wrap{
+    overflow-y: auto;
+    height: 100vh;
+    padding-top: 160px;
+  }
   p{
     font-size: 18px;
     line-height: 32px;
@@ -16,20 +19,24 @@
     margin-bottom: 24px;
   }
   &.active{
+    .submit__close{
+      opacity: 1;
+      transition-delay: 1s;
+    }
     .submit__bg{
       transform: translate(0);
     }
     .submit__wrap{
       opacity: 1;
-      transition-delay: 1.2s;
+      transition-delay: .6s;
       transform: translateY(0);
     }
     .submit__bg{
       &_3{
-        transition-delay: .6s;
+        transition-delay: .3s;
       }
       &_2{
-        transition-delay: .3s;
+        transition-delay: .1s;
       }
       &_1{
         transition-delay: 0s;
@@ -47,19 +54,19 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  transition: 1s;
+  transition: .5s;
   transform: translateY(100%);
   &_3{
     background-color: #162EF4;
-    transition-delay: .6s;
+    transition-delay: .3s;
   }
   &_2{
     background-color: #fff;
-    transition-delay: .9s;
+    transition-delay: .4s;
   }
   &_1{
     background-color: #000;
-    transition-delay: 1.2s;
+    transition-delay: .6s;
   }
 }
 
@@ -113,8 +120,11 @@ textarea{
   margin-bottom: 58px;
 }
 
-.input-file{
+.file{
   margin-bottom: 82px;
+}
+
+.input-file{
   display: block;
   font-size: 18px;
   color: #fff;
@@ -126,6 +136,25 @@ textarea{
     margin-left: 6px;
     transform: translateY(4px);
   }
+}
+
+.result-file{
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  opacity: .6;
+  display: flex;
+  align-items: center;
+}
+
+.file-delete{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  background: url(/images/delete.svg) no-repeat center / contain;
+  cursor: pointer;
+  transform: translateY(3px)
 }
 
 .input-wrap.input-wrap--text.input-wrap--flex{
@@ -199,6 +228,9 @@ input[type="submit"]{
   width: 21px;
   height: 21px;
   cursor: pointer;
+  opacity: 0;
+  transition-delay: 0s;
+  transition: .4s;
 }
 
 

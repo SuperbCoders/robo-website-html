@@ -1,3 +1,21 @@
+autosize($('textarea'));
+
+function onChange(event) {
+  var file = event.target.files[0];
+  var reader = new FileReader();
+  reader.onload = function (e) {
+    $('.input-file').fadeOut(0);
+    $('.result-file').empty().append(file.name + '<span class="file-delete"></span>')
+  };
+
+  reader.readAsText(file);
+}
+
+$(document).on('click', '.file-delete', function () {
+  $('.result-file').empty();
+  $('.input-file').fadeIn(0);
+})
+
 $('.slider__wrap').each(function () {
   $(this).slick({
     slidesToShow: 1,
@@ -299,12 +317,14 @@ $('.faq__title').on('click', function () {
 
 $('.header__callback').on('click', function () {
   $('.submit').fadeIn(0).addClass('active');
+  $('body').addClass('hidden');
 });
 
 $('.submit__close').on('click', function () {
   $('.submit').removeClass('active');
   setTimeout(function () {
     $('.submit').fadeOut(0);
-  }, 2200)
+    $('body').removeClass('hidden');
+  }, 1200)
 
 });

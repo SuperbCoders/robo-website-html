@@ -45,6 +45,7 @@ gulp.task('scripts', ['delJs'], function () {
 		'src/libs/slick.js',
 		'src/libs/anime.min.js',
 		'src/libs/charming.min.js',
+		'src/libs/textarea.js',
 		// 'src/libs/main.js',
 	])
 		.pipe(concat('libs.min.js'))
