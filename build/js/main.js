@@ -381,6 +381,7 @@ $('.burger').on('click', function () {
     $('body').removeClass('hidden');
   }
 }); 
+
 $("#mail-file").change(function(){  
   let filename = document.querySelector('#mail-file').innerText;
   let audience = $("#mail_adnc").val();
