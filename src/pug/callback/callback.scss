@@ -5,62 +5,64 @@
   @media(max-width: 980px){
     padding-top: 120px;
     padding-bottom: 160px;
+    
   }
   @media(max-width: 600px){
     padding-bottom: 340px;
+    h2{
+      font-size: 28px;
+      line-height: 44px;
+    }
   }
   h2{
-    opacity: .7;
-    margin-bottom: 48px;
+    opacity: .6;
+    margin-bottom: 5px;
     color: #fff;
-    @media(max-width: 768px){
-      margin-bottom: 50px;
-    }
+    letter-spacing: 0.02em;
+    font-size: 40px;
+    line-height: 56px;
   }
 
   .callback_link{
-    font-size: 24px;
-    line-height: 44px;
-    transform: translateX(52px);
-
+    font-size: 52px;
+    line-height: 68px;
     position: relative;
     font-family: 'Apercu Pro';
-    text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    cursor: pointer;
     text-decoration: none;
-    @media(max-width: 980px){
-      padding-left: 0px;
-      font-size: 22px;
-      transform: none;
-      &:before{
+    @media(max-width: 600px){
+      font-size: 40px;
+      line-height: 56px;
+      text-decoration: underline;
+      &:after{
         display: none;
       }
     }
     &:hover:before{
       transform: translateX(-14px);
     }
-    &:before{
-      content: "";
-      background: url(/images/arrow_right.svg) no-repeat left top;
-      right: 100%;
-      position: absolute;
-      top: 15px;
-      width: 42px;
-      height: 14px;
-      transform: translateX(-20px);
-      transition: .4s;
-    }
+    // &:before{
+    //   content: "";
+    //   background: url(/images/arrow_right.svg) no-repeat left top;
+    //   right: 100%;
+    //   position: absolute;
+    //   top: 15px;
+    //   width: 42px;
+    //   height: 14px;
+    //   transform: translateX(-20px);
+    //   transition: .4s;
+    // }
     &:after{
       content: "";
       height: 2px;
       width: 100%;
       position: absolute;
       top: 100%;
+      margin-top: 3px;
       left: 50%;
       transform: translateX(-50%) translateY(-4px);
-      background-color: #fff;
+      background-color: rgba(255,255,255,.5);
       transition: .3s;
     }
     &:visited{

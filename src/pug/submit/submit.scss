@@ -98,6 +98,7 @@
 
 textarea{
   resize: none;
+  cursor: none;
 }
 
 input:not([type="file"],[type="submit"]),
@@ -110,6 +111,7 @@ textarea{
   width: 100%;
   background-color: transparent;
   color: #fff;
+  cursor: none;
 }
 
 .input-wrap--textarea{
@@ -128,7 +130,7 @@ textarea{
   display: block;
   font-size: 18px;
   color: #fff;
-  cursor: pointer;
+  cursor: none;
   input{
     display: none;
   }
@@ -141,7 +143,7 @@ textarea{
 .result-file{
   font-size: 18px;
   color: #fff;
-  cursor: pointer;
+  cursor: none;
   opacity: .6;
   display: flex;
   align-items: center;
@@ -153,7 +155,7 @@ textarea{
   height: 16px;
   margin-left: 5px;
   background: url(/images/delete.svg) no-repeat center / contain;
-  cursor: pointer;
+  cursor: none;
   transform: translateY(3px)
 }
 
@@ -195,7 +197,7 @@ input[type="submit"]{
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  cursor: pointer;
+  cursor: none;
   background-color: transparent;
   border: none;
   padding-left: 0px;
@@ -227,7 +229,6 @@ input[type="submit"]{
   top: 51px;
   width: 21px;
   height: 21px;
-  cursor: pointer;
   opacity: 0;
   transition-delay: 0s;
   transition: .4s;

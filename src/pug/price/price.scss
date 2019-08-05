@@ -75,7 +75,6 @@
       font-weight: 500;
       border-bottom: 1px dashed transparent;
       display: inline-block;
-      cursor: pointer;
       @media(max-width: 500px){
         font-size: 18px;
       }
@@ -97,7 +96,6 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  cursor: pointer;
   text-decoration: none;
   &:after{
     content: "";
@@ -125,7 +123,6 @@
 }
 
 .tooltip__trigger {
-	cursor: pointer;
 	position: relative;
 }
 

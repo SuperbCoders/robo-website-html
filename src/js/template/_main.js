@@ -328,3 +328,56 @@ $('.submit__close').on('click', function () {
   }, 1200)
 
 });
+
+
+
+$(document).ready(function () {
+  $('body').append('<div class="cursor"></div>');
+});
+
+$(document).on('mousemove', function (e) {
+  var x = e.clientX;
+  var y = e.clientY + 1;
+  $('.cursor').css({
+    'transform': 'translate(' + x + 'px,' + y + 'px)',
+  });
+});
+
+
+$('.white-cursor').hover(
+  function () {
+    $('.cursor').addClass('white');
+  },
+  function () {
+    $('.cursor').removeClass('white');
+  }
+)
+
+
+
+$('a, .header__callback, input, textarea, .submit__close, .header__logo, .tooltip__trigger, .faq__title').hover(
+  function () {
+    $('.cursor').addClass('hover');
+  },
+  function () {
+    $('.cursor').removeClass('hover');
+  }
+)
+
+
+
+$('.burger').on('click', function () {
+  if (!$(this).hasClass('active')) {
+    $(this).removeClass('noactive');
+    $(this).addClass('active');
+    $('.header').addClass('active');
+    $('.mobilemenu').addClass('active');
+    $('body').addClass('hidden');
+  } else {
+    $(this).removeClass('active');
+    $(this).addClass('noactive')
+    $('.header').removeClass('active');
+    $('.mobilemenu').removeClass('active');
+    $('body').removeClass('hidden');
+  }
+});

@@ -35,6 +35,9 @@
     text-decoration: none;
     margin-left: 40px;
     font-family: 'Apercu Pro';
+    font-weight: normal;
+    position: relative;
+    cursor: none;
     @media(max-width: 600px){
       display: block;
       margin-left: 0;
@@ -42,6 +45,23 @@
     }
     &:hover{
      opacity: 1;
+     &:after{
+      height: 11px;
+     }
+    }
+    &:after{
+      content: "";
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-4px);
+      background-color: rgba(255,255,255,.15);
+      transition: .3s;
+      @media(max-width: 600px){
+        display: none;
+      }
     }
   }  
 }

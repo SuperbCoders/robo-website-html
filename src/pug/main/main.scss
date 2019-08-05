@@ -1,11 +1,13 @@
 .main{
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  display: flex;
+  align-items: center;
 }
 .main__wrap{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
   width: 100%;
 }
 
@@ -45,16 +47,28 @@
       width: 76%;
     }
   }
-  &:after{
-    content: "";
+  .main__scroll-line{
     position: absolute;
     right: 0;
-    top: 5px;
-    width: 8px;
-    height: 22px;
-    background: url(/images/arrow.svg) no-repeat center top / contain;
-    animation: animateMainArrow 1s ease-in-out infinite;
+    top: 0;
+    height: 40px;
+    width: 2px;
+    background-color: rgba(34,34,34,.1);
+    transform: translateY(-7px);
+    overflow: hidden;
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2px;
+      height: 50%;
+      transform: translateY(-100%);
+      background-color: #222;
+      animation: animateMainArrow 3s ease-in infinite;
+    }
   }
+  
   &:before{
     height: 2px;
     width: 100%;
@@ -69,12 +83,30 @@
 
 @keyframes animateMainArrow{
   0%{
-    transform: translateY(-1px)
+    transform: translateY(-100%);
+    height: 50%;
   }
-  50%{
-    transform: translateY(1px);
+  70%{
+    transform: translateY(100%);
+    height: 100%;
   }
   100%{
-    transform: translateY(-1px)
+    transform: translateY(100%);
+    height: 100%;
   }
 }
+
+
+.mobile__text{
+  display: none;
+}
+
+@media(max-width: 500px){
+  .mobile__text{
+    display: block;
+  }
+  .desctop__text{
+    display: none;
+  }
+}
+
