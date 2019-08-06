@@ -3,9 +3,11 @@
 }
 
 .blog{
-  transform: translateX(100px);
+  padding-bottom: 170px;
+  overflow: hidden;
   .container{
     max-width: 837px;
+    transform: translateX(100px);
   }
 }
 
@@ -14,8 +16,9 @@
   display: flex;
   justify-content: space-between;
   &:hover{
-    color: #162EF4;
-    text-decoration: none;
+    a{
+      color: #162EF4;
+    }
     span:after{
       background-color: #162EF4;
       height: 22px;
@@ -31,6 +34,7 @@
   width: calc(100% - 149px);
   a{
     margin-bottom: 20px;
+    transition: .4s;
   }
   span{
     font-size: 40px;
@@ -64,4 +68,56 @@
   overflow: hidden;
   opacity: 0;
   transition: .4s;
+}
+
+
+@media(max-width: 1250px){
+  .blog{
+    .container{
+      transform: translateX(0);
+    }
+  }
+  .blog__link{
+    width: 100%;
+  }
+  .blog__link span{
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .inner{
+    padding-top: 140px;
+  }
+  
+}
+
+@media(max-width: 768px){
+  .blog__item{
+    margin-bottom: 56px;
+  }
+  .blog__link span{
+    text-decoration: underline;
+    display: inline;
+    font-size: 30px;
+    line-height: 46px;
+    &:after{
+      display: none;
+    }
+  }
+  .blog__link div{
+    display: inline;
+  }
+  .blog__link a{
+    &:hover , &:active {
+      color: #162EF4;
+    }
+    &:hover span, &:active span{
+      text-decoration: none;
+    }
+  }
+  .blog__pic{
+    display: none;
+  }
+  .blog__date{
+    font-size: 16px;
+  }
 }
