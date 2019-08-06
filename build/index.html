@@ -346,31 +346,36 @@
       <div class="submit-wrap">
         <div class="container">
           <div class="submit__wrap">
-            <form class="subit__form" action="">
+            <form class="subit__form" action="https://mailthis.to/" method="POST" encType="multipart/form-data">
               <p>Briefly tell us about your task and your current goals. Please be specific. If you already have a brief you can attach it below.</p>
               <div class="input-wrap input-wrap--textarea">
-                <textarea placeholder="Type here..."></textarea>
+                <textarea id="mail_tphr" placeholder="Type here..."></textarea>
               </div>
               <div class="file">
                 <label class="input-file">
-                  <input type="file" onchange="onChange(event)"/>Attach file<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <input name="file" type="file" onchange="onChange(event)"/>Attach file<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.75 0C10.707 0 9.68164 0.404297 8.89062 1.19531L1.85937 8.22656C-0.370117 10.4561 -0.370117 14.083 1.85937 16.3125C4.08887 18.542 7.71582 18.542 9.94531 16.3125L14.6328 11.625L13.5781 10.5703L8.89062 15.2578C7.23535 16.9131 4.56934 16.9131 2.91406 15.2578C1.25879 13.6025 1.25879 10.9365 2.91406 9.28125L9.94531 2.25C10.9531 1.24219 12.5703 1.24219 13.5781 2.25C14.5859 3.25781 14.5859 4.875 13.5781 5.88281L6.54688 12.9141C6.18652 13.2744 5.61816 13.2744 5.25781 12.9141C4.89746 12.5537 4.89746 11.9854 5.25781 11.625L11.7031 5.17969L10.6484 4.125L4.20312 10.5703C3.26855 11.5049 3.26855 13.0342 4.20312 13.9688C5.1377 14.9033 6.66699 14.9033 7.60156 13.9688L14.6328 6.9375C16.2148 5.35547 16.2148 2.77734 14.6328 1.19531C13.8418 0.404297 12.793 0 11.75 0Z" fill="white"/>
 </svg>
                 </label>
-                <div class="result-file"></div>
+                <div class="result-file" id="mail-file"></div>
               </div>
               <div class="input-wrap input-wrap--text">
-                <input type="text" placeholder="What is your audience?"/>
+                <input id="mail_adnc" type="text" placeholder="What is your audience?"/>
               </div>
               <div class="input-wrap input-wrap--text">
-                <input type="text" placeholder="Give us some references"/>
+                <input id="mail_refe" type="text" placeholder="Give us some references"/>
               </div>
               <div class="input-wrap input-wrap--text input-wrap--flex">
-                <input type="text" placeholder="Your name"/>
-                <input type="text" placeholder="Your email"/>
+                <input id="mail_name" name="name" type="text" placeholder="Your name"/>
+                <input id="mail_reto" name="_replyto" type="email" placeholder="your@e.mail"/>
               </div>
               <div class="input-wrap input-wrap--text input-wrap--submit">
                 <input type="submit" value="submit a task"/>
+                <input type="hidden" value="submit a task"/>
+                <input id="mail_subj" name="_subject" type="hidden" value=""/>
+                <input name="_honeypot" type="hidden" value=""/>
+                <input name="_after" type="hidden" value="http://localhost:3000/"/>
+                <textarea id="mail_mesg" name="message" style="display:none;" value="fdas"></textarea>
               </div>
             </form>
             <div class="socials">

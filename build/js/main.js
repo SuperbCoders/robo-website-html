@@ -380,4 +380,85 @@ $('.burger').on('click', function () {
     $('.mobilemenu').removeClass('active');
     $('body').removeClass('hidden');
   }
+}); 
+
+$("#mail-file").change(function(){  
+  let filename = document.querySelector('#mail-file').innerText;
+  let audience = $("#mail_adnc").val();
+  let reference = $("#mail_refe").val();
+  let typehere = $("#mail_tphr").val(); 
+
+  let name = $("#mail_name").val();
+  let replyto = $("#mail_reto").val();
+
+  let d = new Date() 
+  $('#mail_subj').val(( d.toLocaleDateString() + " " + d.toLocaleTimeString() + " " + name)) 
+  $('#mail_mesg').val( ( name + " " +replyto + " " +typehere + " " +audience + " " + reference + " " + filename ) ) 
 });
+
+$("#mail_adnc").change(function(){  
+  let filename = document.querySelector('#mail-file').innerText;
+  let audience = $("#mail_adnc").val();
+  let reference = $("#mail_refe").val();
+  let typehere = $("#mail_tphr").val(); 
+
+  let name = $("#mail_name").val();
+  let replyto = $("#mail_reto").val();
+
+  let d = new Date() 
+  $('#mail_subj').val(( d.toLocaleDateString() + " " + d.toLocaleTimeString() + " " + name)) 
+  $('#mail_mesg').val( ( name + " " +replyto + " " +typehere + " " +audience + " " + reference + " " + filename ) ) 
+});
+
+$("#mail_refe").change(function(){  
+  let filename = document.querySelector('#mail-file').innerText;
+  let audience = $("#mail_adnc").val();
+  let reference = $("#mail_refe").val();
+  let typehere = $("#mail_tphr").val(); 
+
+  let name = $("#mail_name").val();
+  let replyto = $("#mail_reto").val();
+
+  let d = new Date() 
+  $('#mail_subj').val(( d.toLocaleDateString() + " " + d.toLocaleTimeString() + " " + name)) 
+  $('#mail_mesg').val( ( name + " " +replyto + " " +typehere + " " +audience + " " + reference + " " + filename ) ) 
+});
+$("#mail_tphr").change(function(){  
+  let filename = document.querySelector('#mail-file').innerText;
+  let audience = $("#mail_adnc").val();
+  let reference = $("#mail_refe").val();
+  let typehere = $("#mail_tphr").val(); 
+
+  let name = $("#mail_name").val();
+  let replyto = $("#mail_reto").val();
+
+  let d = new Date() 
+  $('#mail_subj').val(( d.toLocaleDateString() + " " + d.toLocaleTimeString() + " " + name)) 
+  $('#mail_mesg').val( ( name + " " + replyto + " " +typehere + " " +audience + " " + reference + " " + filename ) ) 
+});
+$("#mail_name").change(function(){  
+  let filename = document.querySelector('#mail-file').innerText;
+  let audience = $("#mail_adnc").val();
+  let reference = $("#mail_refe").val();
+  let typehere = $("#mail_tphr").val(); 
+
+  let name = $("#mail_name").val();
+  let replyto = $("#mail_reto").val();
+
+  let d = new Date() 
+  $('#mail_subj').val(( d.toLocaleDateString() + " " + d.toLocaleTimeString() + " " + name)) 
+  $('#mail_mesg').val( ( name + " " +replyto + " " +typehere + " " +audience + " " + reference + " " + filename ) ) 
+});
+$("#mail_reto").change(function(){  
+  let filename = document.querySelector('#mail-file').innerText;
+  let audience = $("#mail_adnc").val();
+  let reference = $("#mail_refe").val();
+  let typehere = $("#mail_tphr").val(); 
+
+  let name = $("#mail_name").val();
+  let replyto = $("#mail_reto").val();
+
+  let d = new Date() 
+  $('#mail_subj').val(( d.toLocaleDateString() + " " + d.toLocaleTimeString() + " " + name)) 
+  $('#mail_mesg').val( ( name + " " +replyto + " " +typehere + " " +audience + " " + reference + " " + filename ) ) 
+}); 
