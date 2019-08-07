@@ -206,6 +206,9 @@
     opacity: .4;
     margin-bottom: 36px; }
 
+body.ru .blogpage__text span.capital {
+  font-family: 'Playfair Display', sans-serif; }
+
 .blogpage__content-pic {
   margin-bottom: 28px; }
 
@@ -1046,6 +1049,85 @@ h2.h2--normal {
         text-decoration: none;
         border: none; } }
 
+.how {
+  padding-bottom: 140px; }
+  @media (max-width: 980px) {
+    .how {
+      padding-bottom: 70px; } }
+
+.how__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.how__item {
+  margin-bottom: 56px; }
+
+.how__number {
+  font-size: 72px;
+  color: #fff;
+  line-height: 72px;
+  font-weight: bold;
+  margin-bottom: -60px;
+  padding-left: 67px; }
+
+.how__ico {
+  margin-bottom: 50px; }
+
+.how-s {
+  padding-bottom: 180px; }
+  @media (max-width: 980px) {
+    .how-s {
+      padding-bottom: 100px; } }
+  .how-s h2 {
+    margin-bottom: 70px; }
+    @media (max-width: 768px) {
+      .how-s h2 {
+        margin-bottom: 50px; } }
+  .how-s p {
+    margin-bottom: 42px; }
+
+.how__li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .how__li li {
+    width: 33%;
+    margin-bottom: 12px;
+    font-weight: 500;
+    padding-left: 28px;
+    position: relative; }
+    @media (max-width: 980px) {
+      .how__li li {
+        width: 100%; } }
+    .how__li li:after {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-color: #162EF4;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+
 .main {
   min-height: 100vh;
   position: relative;
@@ -1174,85 +1256,6 @@ h2.h2--normal {
     display: block; }
   .desctop__text {
     display: none; } }
-
-.how {
-  padding-bottom: 140px; }
-  @media (max-width: 980px) {
-    .how {
-      padding-bottom: 70px; } }
-
-.how__list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-
-.how__item {
-  margin-bottom: 56px; }
-
-.how__number {
-  font-size: 72px;
-  color: #fff;
-  line-height: 72px;
-  font-weight: bold;
-  margin-bottom: -60px;
-  padding-left: 67px; }
-
-.how__ico {
-  margin-bottom: 50px; }
-
-.how-s {
-  padding-bottom: 180px; }
-  @media (max-width: 980px) {
-    .how-s {
-      padding-bottom: 100px; } }
-  .how-s h2 {
-    margin-bottom: 70px; }
-    @media (max-width: 768px) {
-      .how-s h2 {
-        margin-bottom: 50px; } }
-  .how-s p {
-    margin-bottom: 42px; }
-
-.how__li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-  .how__li li {
-    width: 33%;
-    margin-bottom: 12px;
-    font-weight: 500;
-    padding-left: 28px;
-    position: relative; }
-    @media (max-width: 980px) {
-      .how__li li {
-        width: 100%; } }
-    .how__li li:after {
-      content: "";
-      width: 16px;
-      height: 2px;
-      background-color: #162EF4;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
 
 .mobilemenu {
   position: fixed;
@@ -1822,6 +1825,9 @@ input[type="submit"] {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s; }
+
+body.ru .mainworks__link sup {
+  font-family: 'Playfair Display', sans-serif; }
 
 .mainworks__text {
   position: relative;

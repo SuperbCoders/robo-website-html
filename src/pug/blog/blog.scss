@@ -163,7 +163,11 @@
     margin-bottom: 36px;
   }
 }
-
+body.ru{
+  .blogpage__text span.capital{
+    font-family: 'Playfair Display', sans-serif;
+  }
+}
 .blogpage__content-pic{
   margin-bottom: 28px;
 }
