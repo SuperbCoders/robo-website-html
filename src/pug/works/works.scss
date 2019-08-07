@@ -1,0 +1,221 @@
+.mainworks {
+  .container{
+    max-width: 900px;
+  }
+}
+
+.mainworks__description{
+  line-height: 32px;
+  color: #c4c4c4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.mainworks__link{
+  font-size: 40px;
+  line-height: 56px;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: flex-start;
+  margin-right: 15px;
+  padding-right: 28px;
+  &:hover{
+    color: #162EF4;
+    .mainworks__text:after{
+      height: 22px;
+      background-color: #162EF4;
+    }
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    height: 41px;
+    width: 2px;
+    background-color: #222222;
+    opacity: .15;
+    right: 16px;
+    transform: rotateZ(-21deg);
+    right: 6px;
+    top: 10px;
+  }
+  sup{
+    padding-top: 15px;
+    font-family: "Canela";
+    font-size: 13px;
+    line-height: 13px;
+    transition: .4s;
+  }
+}
+
+.mainworks__text{
+  position: relative;
+  transition: .4s;
+  &:after{
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(3px);
+    background-color: #222222;
+    opacity: .15;
+    transition: .4s;
+}
+}
+
+
+.works__f-blocks{
+  display: grid;
+  grid-template-rows: repeat(2, 33vw);
+  grid-template-columns: repeat(3, 33vw);
+  .homework:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+    height: 66vw;
+  }
+  .homework:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    height: 33vw;
+  }
+  .homework:nth-child(3){
+    grid-column: 3;
+    grid-row: 1;
+    height: 33vw;
+  }
+  .homework:nth-child(4){
+    grid-column: 2;
+    grid-row: 2;
+    height: 33vw;
+    width: 66vw;
+  }
+}
+
+.works__t-blocks{
+  display: grid;
+  grid-template-rows: repeat(2, 33vw);
+  grid-template-columns: repeat(3, 33vw);
+  .homework:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+    height: 66vw;
+    width: 66vw;
+  }
+  .homework:nth-child(2){
+    grid-column: 3;
+    grid-row: 1;
+    height: 33vw;
+  }
+  .homework:nth-child(3){
+    grid-column: 3;
+    grid-row: 2;
+    height: 33vw;
+  }
+}
+
+.works__f-blocks,
+.works__t-blocks{
+  display: block;
+  .homework:nth-child(1){
+    width: 100%;
+    height: 480px;
+  }
+  .homework:nth-child(2){
+    width: 100%;
+    height: 480px;
+  }
+  .homework:nth-child(3){
+    width: 100%;
+    height: 480px;
+  }
+  .homework:nth-child(4){
+    width: 100%;
+    height: 480px;
+  }
+}
+  
+
+.works{
+  overflow: hidden;
+}
+
+.homework{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  .homework__link{
+    font-size: 32px;
+    line-height: 46px; 
+    @media(max-width: 768px){
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
+}
+
+.homework.b1{
+  background-image: url(/images/works/bg1.jpg);
+}
+.homework.b2{
+  background-image: url(/images/works/bg4.jpg);
+}
+.homework.b3{
+  background-image: url(/images/works/bg5.jpg);
+}
+.homework.b4{
+  background-image: url(/images/works/bg6.jpg);
+}
+.homework.b5{
+  background-image: url(/images/works/bg2.jpg);
+}
+.homework.b6{
+  background-image: url(/images/works/bg3.jpg);
+}
+.homework.b7{
+  background-image: url(/images/works/bg7.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  .homework.b1{
+    background-image: url(/images/works/bg1@2x.jpg);
+  }
+  .homework.b2{
+    background-image: url(/images/works/bg4@2x.jpg);
+  }
+  .homework.b3{
+    background-image: url(/images/works/bg5@2x.jpg);
+  }
+  .homework.b4{
+    background-image: url(/images/works/bg6@2x.jpg);
+  }
+  .homework.b5{
+    background-image: url(/images/works/bg2@2x.jpg);
+  }
+  .homework.b6{
+    background-image: url(/images/works/bg3@2x.jpg);
+  }
+  .homework.b7{
+    background-image: url(/images/works/bg7@2x.jpg);
+  }
+}
+
+
+.tags{
+    a{
+      font-size: 18px;
+      line-height: 26px;
+      color: #162EF4;
+      margin-right: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      &.black{
+        color: #222222;
+      }
+    }
+}
+

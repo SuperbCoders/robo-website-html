@@ -41,7 +41,6 @@ body {
   -webkit-appearance: none;
   -webkit-overflow-scrolling: touch;
   background: url(/images/pattern.svg) repeat left top / 100px; 
-  cursor: none;
   &.hidden{
     overflow: hidden;
   }
@@ -66,7 +65,6 @@ a{
   text-decoration: underline;
   color: $link-color;
   -webkit-font-smoothing: antialiased;
-  cursor: none;
 
   &:visited{
     color: $link-color;
@@ -84,7 +82,6 @@ a{
 
   &:hover{
     text-decoration: none;
-    cursor: none;
   }
 
 }
@@ -237,31 +234,6 @@ li{
 
 @media(max-width: 500px){
   br{
-    display: none;
-  }
-}
-
-.cursor{
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #222;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  transition: transform .08s, width .2s, height .2s, opacity .2s;
-  &.white{
-    background-color: #fff;
-    width: 4px;
-    height: 4px;
-  }
-  &.hover{
-    width: 30px;
-    height: 30px;
-    opacity: .6;
-  }
-  @media(max-width: 980px){
     display: none;
   }
 }
