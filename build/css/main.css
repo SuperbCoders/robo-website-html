@@ -210,7 +210,8 @@ h1 {
   font-family: "Apercu Pro";
   font-size: 120px;
   line-height: 120px;
-  color: #162EF4; }
+  color: #162EF4;
+  margin: 0px; }
   @media (max-width: 980px) {
     h1 {
       font-size: 64px;
