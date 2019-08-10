@@ -107,6 +107,7 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  cursor: pointer;
   &:after{
     content: "";
     height: 2px;

@@ -362,7 +362,8 @@ body.ru .blogpage__text span.capital {
   padding-bottom: 24px; }
 
 .faq__title {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .more {
   width: 16px;
@@ -812,7 +813,8 @@ body.ru .blogpage__text span.capital {
   color: #162EF4;
   text-transform: uppercase;
   font-weight: bold;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .header__callback:after {
     content: "";
     height: 2px;
@@ -1443,7 +1445,8 @@ h2.h2--normal {
   display: inline-block; }
 
 .tooltip__trigger {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .tooltip__trigger-text {
   display: block;
