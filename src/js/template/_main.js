@@ -30,26 +30,28 @@ $('.slider').each(function () {
   $('.slider__pagination span:eq(0)').addClass('active');
 });
 
-
-$(window).on('scroll', function () {
-  var windowScroll = $(this).scrollTop();
-  var slidersScrolltop = $('.sliders').offset().top;
-  var slidersHeight = ($('.sliders').innerHeight() * 0.9) + slidersScrolltop;
-  $('.slider').each(function () {
-    var SlideScrolltop = $(this).offset().top - 20;
-    if (windowScroll > SlideScrolltop) {
-      var index = $(this).index();
-      $('.slider__pagination span:eq(' + index + ')').addClass('active').siblings().removeClass('active');
-      var sliderAnchor = index + 2;
-      $('.slider-next').attr('href', '#slider' + sliderAnchor);
+if ($('.sliders').length) {
+  $(window).on('scroll', function () {
+    var windowScroll = $(this).scrollTop();
+    var slidersScrolltop = $('.sliders').offset().top;
+    var slidersHeight = ($('.sliders').innerHeight() * 0.9) + slidersScrolltop;
+    $('.slider').each(function () {
+      var SlideScrolltop = $(this).offset().top - 20;
+      if (windowScroll > SlideScrolltop) {
+        var index = $(this).index();
+        $('.slider__pagination span:eq(' + index + ')').addClass('active').siblings().removeClass('active');
+        var sliderAnchor = index + 2;
+        $('.slider-next').attr('href', '#slider' + sliderAnchor);
+      }
+    });
+    if (windowScroll > slidersScrolltop && windowScroll < slidersHeight) {
+      $('.slider__pagination, .slider-next').addClass('active');
+    } else {
+      $('.slider__pagination, .slider-next').removeClass('active');
     }
   });
-  if (windowScroll > slidersScrolltop && windowScroll < slidersHeight) {
-    $('.slider__pagination, .slider-next').addClass('active');
-  } else {
-    $('.slider__pagination, .slider-next').removeClass('active');
-  }
-});
+}
+
 
 
 
@@ -331,39 +333,6 @@ $('.submit__close').on('click', function () {
 });
 
 
-
-// $(document).ready(function () {
-//   $('body').append('<div class="cursor"></div>');
-// });
-
-// $(document).on('mousemove', function (e) {
-//   var x = e.clientX;
-//   var y = e.clientY + 1;
-//   $('.cursor').css({
-//     'transform': 'translate(' + x + 'px,' + y + 'px)',
-//   });
-// });
-
-
-// $('.white-cursor').hover(
-//   function () {
-//     $('.cursor').addClass('white');
-//   },
-//   function () {
-//     $('.cursor').removeClass('white');
-//   }
-// )
-
-
-
-// $('a, .header__callback, input, textarea, .submit__close, .header__logo, .tooltip__trigger, .faq__title').hover(
-//   function () {
-//     $('.cursor').addClass('hover');
-//   },
-//   function () {
-//     $('.cursor').removeClass('hover');
-//   }
-// )
 
 
 
