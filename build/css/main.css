@@ -293,10 +293,20 @@ li {
   br {
     display: none; } }
 
+body.ru h1 {
+  font-size: 80px; }
+
 body.ru h2, body.ru h3, body.ru h4 {
   margin: 0px;
   font-family: 'Playfair Display', sans-serif;
-  line-height: 100%; }
+  line-height: 100%;
+  font-weight: 700; }
+
+@media (max-width: 480px) {
+  body.ru h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px; } }
 
 .btn {
   padding: 0 25px;
@@ -937,15 +947,21 @@ body.ru .blogpage__text span.capital {
   padding-bottom: 100px; }
 
 .faq__panel {
-  position: relative; }
+  position: relative;
+  width: 80%;
+  margin: 0 auto; }
 
 .faq__panel:after {
-  height: 1px;
+  height: 2px;
   width: 100%;
   position: absolute;
   content: "";
   background-color: #222;
   opacity: .05; }
+
+@media (max-width: 480px) {
+  .faq__panel {
+    width: 90%; } }
 
 .faq__title {
   margin-bottom: 22px;
