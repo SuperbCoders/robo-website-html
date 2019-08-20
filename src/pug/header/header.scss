@@ -133,12 +133,27 @@
   margin: 0 24px;
   text-transform: uppercase;
   text-decoration: none;
-  &:hover{
-    color: #162EF4;
+  position: relative;
+  &:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    background-color: #000;
+    transition: .3s;
+    opacity: .1;
+    @media(max-width: 600px){
+      display: none;
+    }
   }
 }
 
-
+.nav__link:hover:after{
+  height: 13px;
+}
 
 
 
