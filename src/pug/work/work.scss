@@ -1,0 +1,168 @@
+.work{
+  padding-top: 280px;
+  overflow: hidden;
+  .slider__wrap .slick-slide:after{
+    display: none;
+  }
+  h2{
+    margin-bottom: 100px;
+  }
+  .tags{
+    margin-bottom: 20px;
+  }
+}
+
+
+.work__full-pic{
+  margin-bottom: 108px;
+}
+
+.work__info{
+  margin-bottom: 100px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.work__info-date{
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.work__info-link{
+  color: #162EF4;
+  margin-bottom: 45px;
+  text-decoration: none;
+}
+
+.work__info-autors{
+  color: #222;
+  margin-bottom: 10px;
+  span{
+    color: #C4C4C4;
+  }
+}
+
+.work__slider{
+  overflow: hidden;
+  .slider__wrap{
+    transform: none;
+    margin-left: 0;
+    margin-right: -42px;
+    width: calc(100% + 42px);
+    margin-bottom: 100px;
+  }
+  .slick-slide{
+    opacity: 1;
+    margin-left: 0px;
+  }
+  .slick-dots{
+    display: none!important;
+  }
+}
+
+.work__info-left{
+  padding-right: 20px;
+}
+
+.work__info-right{
+  max-width: 624px;
+  width: 100%;
+  p{
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+
+.work__pic{
+  margin-bottom: 40px;
+}
+
+.work__text{
+  margin-bottom: 100px;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    p{
+      max-width: 624px;
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+}
+
+.work__phone-pic{
+  border: 10px solid #fff;
+  border-top: 27px solid #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+  position: relative;
+  img{
+    display: block;
+  }
+  &:after{
+    content: "";
+    left: 14px;
+    top: -17px;
+    left: 4px;
+    width: 32px;
+    height: 8px;
+    background: url(/images/bar.svg) no-repeat center/32px 8px;
+    position: absolute;
+  }
+}
+
+.work__phone{
+  position: absolute;
+  bottom: -100px;
+  right: -85px;
+}
+
+.next__project{
+  padding-top: 300px;
+}
+
+
+
+
+@media(max-width: 980px){
+  .work{
+    padding-top: 180px;
+    h2{
+      margin-bottom: 60px;
+    }
+    
+  }
+  .work__info .container{
+    display: block;
+  }
+  .work__info-left{
+    margin-bottom: 28px;
+  }
+  .work__info-right p{
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .work__slider .slider__wrap{
+    width: 90%;
+    margin-right: 0px;
+  }
+  .work__phone{
+    right: -40px;
+    width: 30vw;
+  }
+  .next__project{
+    padding-top: 160px;
+    .blog{
+      padding-bottom: 100px;
+    }
+  }
+
+}
