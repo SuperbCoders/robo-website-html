@@ -244,13 +244,17 @@ li{
 }
 
 
-
-
+body.ru{
+  h1{
+    font-size: 80px;	  
+  } 
+}
 
 body.ru{
   h2, h3, h4{
     margin: 0px;
     font-family: 'Playfair Display', sans-serif;
     line-height: 100%;
+font-weight: 700;	  
   } 
 }
