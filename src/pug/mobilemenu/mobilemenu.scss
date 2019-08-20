@@ -10,6 +10,7 @@
   background-color: #162EF4;
   transform: translateY(100%);
   transition: .4s ease;
+  overflow-y: auto;
   &.active{
     transform: translateY(0px);
   }
