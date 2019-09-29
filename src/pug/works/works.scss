@@ -195,53 +195,6 @@ body.ru{
   z-index: 1;
 }
 
-.homework.b1{
-  background-image: url(/images/works/bg1.jpg);
-}
-.homework.b2{
-  background-image: url(/images/works/bg4.jpg);
-}
-.homework.b3{
-  background-image: url(/images/works/bg5.jpg);
-}
-.homework.b4{
-  background-image: url(/images/works/bg6.jpg);
-}
-.homework.b5{
-  background-image: url(/images/works/bg2.jpg);
-}
-.homework.b6{
-  background-image: url(/images/works/bg3.jpg);
-}
-.homework.b7{
-  background-image: url(/images/works/bg7.jpg);
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-  .homework.b1{
-    background-image: url(/images/works/bg1@2x.jpg);
-  }
-  .homework.b2{
-    background-image: url(/images/works/bg4@2x.jpg);
-  }
-  .homework.b3{
-    background-image: url(/images/works/bg5@2x.jpg);
-  }
-  .homework.b4{
-    background-image: url(/images/works/bg6@2x.jpg);
-  }
-  .homework.b5{
-    background-image: url(/images/works/bg2@2x.jpg);
-  }
-  .homework.b6{
-    background-image: url(/images/works/bg3@2x.jpg);
-  }
-  .homework.b7{
-    background-image: url(/images/works/bg7@2x.jpg);
-  }
-}
-
 
 .tags{
     a{
