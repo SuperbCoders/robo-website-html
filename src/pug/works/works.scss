@@ -169,21 +169,20 @@ body.ru{
     }
   }
 }
+
 .homework-pic{
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  img{
-    object-fit: cover;
-    max-width: none;
-    max-height: none;
-    display: block;
-    min-width: 100%;
-    min-height: 100%;
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.homework-wrap{
+  z-index: 20;
 }
 
 .homework-pic--front{
