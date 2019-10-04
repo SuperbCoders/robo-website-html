@@ -181,6 +181,31 @@ body.ru{
   background-position: center;
 }
 
+.homework-pic.homework-pic--front-2x,
+.homework-pic.homework-pic--back-2x{
+  display: none;
+}
+
+
+
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi)  {
+   
+.homework-pic.homework-pic--front-2x,
+.homework-pic.homework-pic--back-2x{
+  display: block;
+}
+
+.homework-pic.homework-pic--front,
+.homework-pic.homework-pic--back{
+  display: none;
+}
+
+}
+
 .homework-wrap{
   z-index: 20;
 }
