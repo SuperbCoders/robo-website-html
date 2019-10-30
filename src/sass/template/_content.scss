@@ -2353,10 +2353,32 @@ body.ru .mainworks__link sup {
   .homework .homework__link {
     font-size: 32px;
     line-height: 46px; }
+    .homework .homework__link:hover span:after {
+      height: 13px; }
+    .homework .homework__link span {
+      position: relative; }
+      .homework .homework__link span:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-4px);
+            -ms-transform: translateX(-50%) translateY(-4px);
+                transform: translateX(-50%) translateY(-4px);
+        background-color: #000;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        opacity: .1; }
     @media (max-width: 768px) {
       .homework .homework__link {
         font-size: 28px;
         line-height: 44px; } }
+
+.homework__link.black span {
+  color: #000; }
 
 .homework-pic {
   position: absolute;
@@ -2402,3 +2424,14 @@ body.ru .mainworks__link sup {
   text-decoration: none; }
   .tags a.black {
     color: #222222; }
+
+@media (max-width: 1150px) {
+  .homework .homework__link {
+    font-size: 23px;
+    line-height: 33px; } }
+
+@media (max-width: 980px) {
+  .homework .homework__link span {
+    border-bottom: 0px; }
+  .homework .homework__link span:after {
+    display: none; } }
