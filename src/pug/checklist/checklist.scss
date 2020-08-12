@@ -19,6 +19,13 @@
         &__link:after {
             transform: rotateZ(21deg);
         }
+        &__link.active {
+            color: #162EF4;
+            .mainworks__text:after {
+                height: 22px;
+                background-color: #162EF4;
+            }
+        }
     }
 
     &-sect {
@@ -70,7 +77,6 @@
             cursor: pointer;
             position: relative;
             padding-left: 84px;
-            font-weight: bold;
 
             a {
                 font-size: 22px;
@@ -153,7 +159,7 @@
         &-label {
             &-text {
                 font-size: 16px;
-                line-height: 30px;
+                line-height: 26px;
                 padding-left: 42px;
                 a {
                     font-size: 16px;
